@@ -1,4 +1,4 @@
-//Job Sequence
+//Job Sequence with deadline
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -79,7 +79,9 @@ int main()
     {
         slot[i]=-1;
     }
-
+    
+//MAIN LOGIC
+    
     for(int i=0;i<n;i++)
     {
         for(int j=deadline[i]-1;j>=0;j--)
