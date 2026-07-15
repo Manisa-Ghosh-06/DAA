@@ -1,4 +1,4 @@
-// 0/1 knapsack
+// (0/1) Knapsack
 
 #include<stdio.h>
 int max(int a, int b)
@@ -23,7 +23,8 @@ int main()
 
     printf("\nKnapsack weight is %d",W);
 
-
+//Initialised DP Table
+    
     int r=n+1,c=W+1;
     int k[r][c];
 
@@ -68,7 +69,7 @@ int main()
         printf("%d\t",weight[i]);
     }
 
-    //MAIN LOGIC
+    //<===================MAIN LOGIC================================>
     for(int i=1;i<r;i++)
     {
         for(int j=1;j<c;j++)
