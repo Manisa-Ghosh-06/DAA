@@ -34,7 +34,7 @@ int main()
         printf("\n");
     }
 
-
+//<===================MAIN LOGIC==================>
 for(int k=0;k<n;k++)
 {
     for(int i=0;i<n;i++)
