@@ -26,6 +26,10 @@ int main()
     {
         printf("Matrix-%d: %d * %d\n",i,p[i],p[i+1]);
     }
+
+
+    //Initialised DP Table
+    
     int r=n-1;
     int m[r][r];
 
@@ -43,7 +47,7 @@ int main()
         }
     }
 
-//MAIN LOGIC
+//<===============================MAIN LOGIC==================================>
 
 for(int len=2;len<=r;len++)
 {
@@ -63,7 +67,9 @@ for(int len=2;len<=r;len++)
     }
    }
 }
-
+    
+//Print DP Table  
+    
 for(int i=0;i<r;i++)
 {
     for(int j=0;j<r;j++)
