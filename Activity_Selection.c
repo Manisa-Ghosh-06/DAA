@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-void sort(int start[],int end[],int a[],int n)
+void sort(int start[],int end[],int a[],int n)  //SORT IN ASCENDING ORDER OF END TIME
 {
     for(int i=0;i<n-1;i++)
     {
@@ -97,7 +97,7 @@ for(int i=0;i<n;i++)
     slot[i]=-1;
 }
 
-//MAIN LOGIC
+//<======================MAIN LOGIC========================>
 
 int count=1,last=0;
 
