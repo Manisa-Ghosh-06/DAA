@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void sort(int profit[],int deadline[],int n)
+void sort(int profit[],int deadline[],int n)   //SORT PROFIT IN DESCENDING ORDER
 {
     for(int i=0;i<n-1;i++)
     {
@@ -26,7 +26,7 @@ void sort(int profit[],int deadline[],int n)
     }
 }
 
-int max(int deadline[],int n)
+int max(int deadline[],int n)  //FIND MAX DEADLINE
 {
     int key=deadline[0];
     for(int i=1;i<n;i++)
@@ -80,7 +80,7 @@ int main()
         slot[i]=-1;
     }
     
-//MAIN LOGIC
+//<=======================MAIN LOGIC================================>
     
     for(int i=0;i<n;i++)
     {
