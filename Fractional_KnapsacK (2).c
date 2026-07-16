@@ -125,7 +125,7 @@ int main()
     for(int i=0; i<n; i++)
         printf("%.2f\t",ratio[i]);
 
-    
+
     printf("\n\nEnter Knapsack Capacity: ");
     scanf("%d",&W);
 
@@ -147,48 +147,50 @@ int main()
 
     int choice;
 
-    for(int i=0; i<3; i++)
+while(1)
+{
+    printf("\n\n1. Greedy about Profit");
+    printf("\n2. Greedy about Weight");
+    printf("\n3. Greedy about Ratio");
+    printf("\n4. Exit");
+
+    printf("\nEnter Choice: ");
+    scanf("%d",&choice);
+
+    switch(choice)
     {
-        printf("\n\n1. Greedy about Profit");
-        printf("\n2. Greedy about Weight");
-        printf("\n3. Greedy about Ratio");
-
-        printf("\nEnter Choice: ");
-        scanf("%d",&choice);
-
-        if(choice==1)
-        {
-            bubblesort(profit_1, weight_1, ratio_1, n, choice);
+        case 1:
+            bubblesort(profit_1, weight_1, ratio_1, n, 1);
 
             profit_max = total(profit_1, weight_1, ratio_1, n, W);
 
             printf("\nMaximum Profit (Profit Greedy): %.2f\n", profit_max);
-        }
+            break;
 
-        else if(choice==2)
-        {
-            bubblesort(profit_2, weight_2, ratio_2, n, choice);
+        case 2:
+            bubblesort(profit_2, weight_2, ratio_2, n, 2);
 
             weight_max = total(profit_2, weight_2, ratio_2, n, W);
 
             printf("\nMaximum Profit (Weight Greedy): %.2f\n", weight_max);
-        }
+            break;
 
-        else if(choice==3)
-        {
-            bubblesort(profit_3, weight_3, ratio_3, n, choice);
+        case 3:
+            bubblesort(profit_3, weight_3, ratio_3, n, 3);
 
             ratio_max = total(profit_3, weight_3, ratio_3, n, W);
-            
-            printf("\nMaximum Profit (Ratio Greedy): %.2f\n", ratio_max);
-        }
 
-        else
-        {
+            printf("\nMaximum Profit (Ratio Greedy): %.2f\n", ratio_max);
+            break;
+
+        case 4:
+            printf("\nProgram Ended.\n");
+            return 0;
+
+        default:
             printf("\nInvalid Choice!\n");
-            i--;
-        }
     }
+}
 
 
     return 0;
