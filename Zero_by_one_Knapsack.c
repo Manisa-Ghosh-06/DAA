@@ -49,7 +49,7 @@ int main()
 
     printf("\nScanning Profit and Weight: \n");
 
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<n+1;i++)
     {
     printf("Profit[%d]: ",i);
     scanf("%d",&profit[i]);
@@ -59,12 +59,12 @@ int main()
     }
 
     printf("\nPROFIT: ");
-    for(int i=0;i<=n;i++)
+    for(int i=0;i<n+1;i++)
     {
         printf("%d\t",profit[i]);
     }
     printf("\nWEIGHT: ");
-    for(int i=0;i<=n;i++)
+    for(int i=0;i<n+1;i++)
     {
         printf("%d\t",weight[i]);
     }
