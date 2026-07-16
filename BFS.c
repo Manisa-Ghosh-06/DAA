@@ -28,9 +28,7 @@ void bfs(int start)
 }
 
 int main()
-{
-    int start;
-
+{  
     printf("Enter number of vertices: ");
     scanf("%d", &n);
 
@@ -38,11 +36,12 @@ int main()
     for(int i = 0; i < n; i++)
     {
         for(int j = 0; j < n; j++)
-        {
+        {   printf("adj[%d][%d]: ",i,j);
             scanf("%d", &adj[i][j]);
         }
+        printf("\n");
     }
-
+     int start;
     printf("Enter starting vertex: ");
     scanf("%d", &start);
 
