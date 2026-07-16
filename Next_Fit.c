@@ -35,7 +35,7 @@ int main()
    }
 
 
-
+//<========================================MAIN LOGIC====================>
    int count=1,remain=bin;
    for(int i=0;i<n;i++)
    {
