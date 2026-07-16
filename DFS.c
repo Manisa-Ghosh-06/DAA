@@ -23,7 +23,7 @@ int main()
     printf("Enter number of vertices: ");
     scanf("%d", &n);
 
-    printf("Enter adjacency matrix:\n");
+    printf("Enter adjacency matrix:\n\n");
     for(int i = 0; i < n; i++)
     {
         for(int j = 0; j < n; j++)
