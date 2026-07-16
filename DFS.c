@@ -20,8 +20,6 @@ void dfs(int v)
 
 int main()
 {
-    int start;
-
     printf("Enter number of vertices: ");
     scanf("%d", &n);
 
@@ -35,6 +33,17 @@ int main()
         printf("\n");
     }
 
+    printf("Adjacency matrix:\n");
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {   printf("%d\t",adj[i][j]);
+            
+        }
+        printf("\n");
+    }
+    
+   int start;
     printf("Enter starting vertex: ");
     scanf("%d", &start);
 
